@@ -79,7 +79,7 @@ function drawcell(x,y){
 	}else if(cellAt[x][y].altitude<1000000){
 	ctx.strokeStyle="#999";
 	}else{
-	ctx.strokeStyle="fff";
+	ctx.strokeStyle="#fff";
 	}
 	ctx.beginPath();
 	ctx.moveTo(x,y);
