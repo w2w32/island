@@ -82,7 +82,6 @@ function drawcell(x,y){
 	}else{
 	ctx.strokeStyle="fff";
 	}
-	ctx.lineWidth=2;
 	ctx.beginPath();
 	ctx.moveTo(x,y);
 	ctx.lineTo(x+1,y+1);	
