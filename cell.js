@@ -59,28 +59,30 @@ function run(){
 }
 function drawcell(x,y){
 	if(cellAt[x][y].altitude===0){
-	ctx.strokeStyle="66f";
+	ctx.strokeStyle="#66f";
 	}else if(cellAt[x][y].altitude<10){
-	ctx.strokeStyle="ed8";
+	ctx.strokeStyle="#ed8";
 	}else if(cellAt[x][y].altitude<20){
-	ctx.strokeStyle="dc7";
+	ctx.strokeStyle="#dc7";
 	}else if(cellAt[x][y].altitude<30){
-	ctx.strokeStyle="a85";
+	ctx.strokeStyle="#a85";
 	}else if(cellAt[x][y].altitude<40){
-	ctx.strokeStyle="a97";
+	ctx.strokeStyle="#a97";
 	}else if(cellAt[x][y].altitude<100){
-	ctx.strokeStyle="5c5";
+	ctx.strokeStyle="#5c5";
 	}else if(cellAt[x][y].altitude<1000){
-	ctx.strokeStyle="5a5";
+	ctx.strokeStyle="#5a5";
 	}else if(cellAt[x][y].altitude<10000){
-	ctx.strokeStyle="383";
+	ctx.strokeStyle="#383";
 	}else if(cellAt[x][y].altitude<100000){
-	ctx.strokeStyle="3b7";
+	ctx.strokeStyle="#3b7";
 	}else if(cellAt[x][y].altitude<1000000){
-	ctx.strokeStyle="999";
+	ctx.strokeStyle="#999";
+	console.log(ctx.strokeStyle);
 	}else{
 	ctx.strokeStyle="fff";
 	}
+	ctx.lineWidth=2;
 	ctx.beginPath();
 	ctx.moveTo(x,y);
 	ctx.lineTo(x+1,y+1);	
